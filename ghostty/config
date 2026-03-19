@@ -1,0 +1,64 @@
+# Ghostty Configuration - Tokyo Night Theme
+# 基于 GitHub 热门配置整理
+
+# === 主题 ===
+theme = TokyoNight Moon
+
+# === 字体配置 ===
+font-family = JetBrains Mono Nerd Font
+font-size = 18
+font-thicken = true
+font-feature = +calt,+liga
+
+# === 窗口设置 ===
+window-padding-x = 10
+window-padding-y = 10
+window-width = 140
+window-height = 35
+window-save-state = always
+window-inherit-working-directory = true
+
+# === 光标 ===
+cursor-style = block
+cursor-style-blink = false
+adjust-cell-height = 6
+
+# === Shell 集成 ===
+shell-integration-features = no-cursor
+
+# === 鼠标行为 ===
+mouse-hide-while-typing = true
+copy-on-select = clipboard
+
+# === 视觉优化 ===
+minimum-contrast = 1.1
+
+# === macOS 特定设置 ===
+macos-titlebar-style = tabs
+macos-window-shadow = false
+macos-icon = custom-style
+
+# === 剪贴板 ===
+clipboard-read = allow
+clipboard-write = allow
+clipboard-trim-trailing-spaces = true
+
+# === 性能 ===
+scrollback-limit = 10000
+
+# === 快捷键绑定 ===
+# 清屏
+keybind = ctrl+shift+k=clear_screen
+
+# Vim 风格分屏导航
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+j=goto_split:bottom
+keybind = ctrl+shift+k=goto_split:top
+keybind = ctrl+shift+l=goto_split:right
+
+# 创建分屏
+keybind = ctrl+shift+v=new_split:right
+keybind = ctrl+shift+s=new_split:down
+
+# 快速切换终端（全局快捷键）
+keybind = global:cmd+escape=toggle_quick_terminal
