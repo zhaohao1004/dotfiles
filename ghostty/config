@@ -62,3 +62,12 @@ keybind = ctrl+shift+s=new_split:down
 
 # 快速切换终端（全局快捷键）
 keybind = global:cmd+escape=toggle_quick_terminal
+
+# 自动复制 terminfo 到新 SSH 服务器
+shell-integration-features = ssh-terminfo
+
+# 或者使用环境变量回退方式
+shell-integration-features = ssh-env
+
+# 或者两者都启用（先尝试安装 terminfo，失败则回退）
+shell-integration-features = ssh-terminfo,ssh-env
