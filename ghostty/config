@@ -44,7 +44,8 @@ clipboard-write = allow
 clipboard-trim-trailing-spaces = true
 
 # === 性能 ===
-scrollback-limit = 10000
+# 滚动缓冲区：增大到 100000 行，避免长输出被截断
+scrollback-limit = 100000
 
 # === 快捷键绑定 ===
 # 清屏
