@@ -1,16 +1,16 @@
 # Ghostty Configuration - Tokyo Night Theme
 # 基于 GitHub 热门配置整理
 
-# === 主题 ===
+# 主题
 theme = TokyoNight Moon
 
-# === 字体配置 ===
+# 字体配置
 font-family = JetBrains Mono Nerd Font
 font-size = 18
 font-thicken = true
 font-feature = +calt,+liga
 
-# === 窗口设置 ===
+# 窗口设置
 window-padding-x = 10
 window-padding-y = 10
 window-width = 140
@@ -18,36 +18,36 @@ window-height = 35
 window-save-state = always
 window-inherit-working-directory = true
 
-# === 光标 ===
+# 光标
 cursor-style = block
 cursor-style-blink = false
 adjust-cell-height = 6
 
-# === Shell 集成 ===
+# Shell 集成
 shell-integration-features = no-cursor
 
-# === 鼠标行为 ===
+# 鼠标行为
 mouse-hide-while-typing = true
 copy-on-select = clipboard
 
-# === 视觉优化 ===
+# 视觉优化
 minimum-contrast = 1.1
 
-# === macOS 特定设置 ===
+# macOS 特定设置
 macos-titlebar-style = tabs
 macos-window-shadow = false
 macos-icon = custom-style
 
-# === 剪贴板 ===
+# 剪贴板
 clipboard-read = allow
 clipboard-write = allow
 clipboard-trim-trailing-spaces = true
 
-# === 性能 ===
+# 性能
 # 滚动缓冲区：增大到 100000 行，避免长输出被截断
 scrollback-limit = 100000
 
-# === 快捷键绑定 ===
+# 快捷键绑定
 # 清屏
 keybind = ctrl+shift+k=clear_screen
 
@@ -64,11 +64,5 @@ keybind = ctrl+shift+s=new_split:down
 # 快速切换终端（全局快捷键）
 keybind = global:cmd+escape=toggle_quick_terminal
 
-# 自动复制 terminfo 到新 SSH 服务器
-shell-integration-features = ssh-terminfo
-
-# 或者使用环境变量回退方式
-shell-integration-features = ssh-env
-
-# 或者两者都启用（先尝试安装 terminfo，失败则回退）
+# SSH terminfo：先尝试安装 terminfo，失败则通过环境变量回退
 shell-integration-features = ssh-terminfo,ssh-env
