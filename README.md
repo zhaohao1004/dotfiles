@@ -1,53 +1,40 @@
-# 🏠 Dotfiles
+# Dotfiles
 
-个人开发环境配置文件集合
+个人开发环境配置文件集合。
 
-## 📁 目录结构
+## 目录结构
 
 ```
 .
 ├── ghostty/          # Ghostty 终端配置
 │   └── config
+├── claude/           # Claude Code 配置
+│   └── statusline.sh
 └── README.md
 ```
 
-## 🔧 配置文件
+## 配置文件
 
-### Ghostty Terminal
+### Ghostty
 
-现代化的 GPU 加速终端模拟器。
+GPU 加速终端模拟器。
 
-- **配置文件**: `ghostty/config`
-- **安装位置**: `~/.config/ghostty/config`
+- 配置文件: `ghostty/config`
+- 安装位置: `~/.config/ghostty/config`
+- 特性: TokyoNight Moon 主题、JetBrains Mono Nerd Font、Vim 风格分屏导航、macOS 原生集成
 
-**特性**:
-- TokyoNight Moon 主题
-- JetBrains Mono Nerd Font 字体
-- Vim 风格的分屏导航快捷键
-- macOS 原生集成
+### Claude Code
 
-**使用方法**:
+- `claude/statusline.sh` -- Powerline 风格状态栏，显示项目名、Git 状态、模型、Context 用量、成本
+
+## 安装
+
 ```bash
-# 创建配置目录
+# Ghostty（符号链接方式，推荐）
 mkdir -p ~/.config/ghostty
-
-# 复制配置文件（选择以下任一方式）
-
-# 方式1: 创建符号链接（推荐，便于同步更新）
 ln -s $(pwd)/ghostty/config ~/.config/ghostty/config
-
-# 方式2: 直接复制
-cp ghostty/config ~/.config/ghostty/config
 ```
 
-## 📝 说明
+## 链接
 
-这个仓库用于备份和同步我的开发环境配置。每个配置文件都经过精心调优，适合日常开发使用。
-
-## 🔗 相关链接
-
-- [Ghostty](https://ghostty.org/) - 现代化终端模拟器
-
----
-
-💡 持续更新中...
+- [Ghostty](https://ghostty.org/) - 终端模拟器
